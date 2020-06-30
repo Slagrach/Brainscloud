@@ -254,7 +254,7 @@ h6 {
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\works.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/works\.less}line{font-family:\000033}}
 .works {
-  padding: 2.66rem 0;
+  margin: 2.66rem 0;
 }
 /* line 7, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\works.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/works\.less}line{font-family:\000037}}
@@ -337,9 +337,84 @@ h6 {
   color: #2B2A2C;
   text-transform: uppercase;
 }
+/* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\000033}}
+.about {
+  margin: 8.53rem 0;
+}
+/* line 7, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\000037}}
+.about__inner {
+  display: flex;
+  max-width: 1080px;
+}
+/* line 11, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000311}}
+.about__photo {
+  width: 50%;
+  position: relative;
+}
+/* line 15, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000315}}
+.about__photo img {
+  position: relative;
+  z-index: 2;
+}
+/* line 20, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000320}}
+.about__photo:before {
+  content: "";
+  width: 413px;
+  height: 413px;
+  background-color: #EFEFEF;
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 32, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000332}}
+.about__content {
+  width: 50%;
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+/* line 37, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000337}}
+.about__title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #2B2A2C;
+}
+/* line 43, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000343}}
+.about__bigtitle {
+  font-size: 6.13rem;
+  font-weight: bold;
+  color: rgba(43, 42, 44, 0.15);
+  position: relative;
+  right: 1rem;
+}
+/* line 50, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000350}}
+.about__text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  color: #6A696B;
+  margin-bottom: 2.66rem;
+}
 /* HELPERS */
 /* line 2, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\helpers.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/helpers\.less}line{font-family:\000032}}
 .text-center {
   text-align: center;
+}
+/* line 6, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\helpers.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/helpers\.less}line{font-family:\000036}}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
