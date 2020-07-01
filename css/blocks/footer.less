@@ -1,0 +1,59 @@
+// main: ../style.less
+
+
+.footer {
+	background-color: @black;
+    padding: .86rem 0;
+}
+.container {}
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__credits {
+	display: flex;
+	align-items: center;
+}
+.footer__copyright {
+	font-size: .93rem;
+	font-weight: 400;
+	color: #8D8D8E;
+	letter-spacing: .03rem;
+
+	border-right: 1px solid fade(@gray, 35%);
+	padding-right: 2rem;
+}
+.footer__social {
+	padding-left: 2rem;
+	display: flex;
+	align-items: center;
+
+	a {
+		padding-right: 1rem;
+	}
+}
+.footer__nav {
+	display: flex;
+	align-items: center;
+
+	.btn {
+		padding: .6rem 1.66rem;
+		margin-left: 2.2rem;
+		text-transform: uppercase;
+		border-radius: 20px;
+		line-height: 1.06;
+
+		&:hover {
+			background-color: #8D8D8E;
+			color: @black;
+		}
+	}
+
+}
+.footer__nav-link {
+	text-decoration: none;
+	color: #8D8D8E;
+	font-size: .93rem;
+	padding-left: 1rem;
+	letter-spacing: .03rem;
+}
