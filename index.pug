@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="zxx")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -40,22 +40,22 @@ html(lang="en")
 						h1.intro__title Lewis Nathaniel
 						.intro__text UI & UX Designer
 						.social
-							a(class='social__link' href="#"): img(src="images/icons/behance.svg" alt="")
+							a(class='social__link' href="#"): img(src="images/icons/behance.svg" width='41' height='41' alt="")
 							|
 							|
-							a(class='social__link' href="#"): img(src="images/icons/dribbble.svg" alt="")
+							a(class='social__link' href="#"): img(src="images/icons/dribbble.svg" width='41' height='41' alt="")
 							|
 							|
-							a(class='social__link' href="#"): img(src="images/icons/facebook.svg" alt="")
+							a(class='social__link' href="#"): img(src="images/icons/linkedin.svg" width='41' height='41' alt="")
 							|
 							|
-							a(class='social__link' href="#"): img(src="images/icons/in.svg" alt="")
+							a(class='social__link' href="#"): img(src="images/icons/f-icon.svg" width='41' height='41' alt="")
 							|
 							|
-							a(class='social__link' href="#"): img(src="images/icons/instagram.svg" alt="")
+							a(class='social__link' href="#"): img(src="images/icons/i-icon.svg" width='41' height='41' alt="")
 							|
 							|
-							a(class='social__link' href="#"): img(src="images/icons/twitter.svg" alt="")
+							a(class='social__link' href="#"): img(src="images/icons/t-icon.svg" width='41' height='41' alt="")
 						a(class='btn' href="#") HiRE ME
 						button(class="btn" type="button") SEE MY RESUME
 					img(class="intro__photo" src="images/photo.png" alt="")
@@ -153,4 +153,82 @@ html(lang="en")
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit quisquam eaque quis sequi sunt, delectus facilis unde ipsam eius deleniti laboriosam nemo officiis distinctio maiores, at esse veritatis architecto.
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, illo, consectetur consequatur, distinctio aspernatur est sequi veritatis officia ex dolore expedita corrupti provident laudantium quo debitis quam itaque nemo esse.
 						a(class='btn' href='#') HIRE ME
-						button(class='btn' type='button') SEE MY RESUME 
+						button(class='btn' type='button') SEE MY RESUME
+		// REVIEWS
+		.reviews
+			.container
+				.reviews__item
+					.reviews__text
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, cupiditate ab officiis. Quam quisquam molestiae earum ipsam voluptate ducimus necessitatibus inventore, eveniet tempore voluptatum quod voluptatem, ut saepe placeat ipsum!
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatem facilis ipsa consequuntur, itaque quisquam animi cupiditate voluptates deserunt porro cumque, quis nesciunt laborum. Nisi, omnis consectetur nesciunt sed quod!
+					.reviews__author
+						img(class='reviews__photo' src='https://place-hold.it/103/003366' alt='')
+						.reviews__name Edward M. Brooks
+						.reviews__company Marketing House
+						.reviews__rating
+							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+							img(class='reviews__star reviews__star--unactive' src='images/star.svg' alt='' width='13' height='13')
+		// NEWS
+		section.news
+			.container
+				.news__header
+					h3.news__title READ ME
+					.news__text Sometimes i write something smart
+				.articles
+					.articles__col
+						.articles__item
+							.articles__header
+								.articles__date 10<br>june
+								a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
+							.articles__content
+								a(href='#'): h4.articles__title TEN THE BEST APP IN 2017
+								.articles__cat CATEGORY 
+								.articles__text
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
+							a(class='btn btn--sm' href='#') READ MORE
+					.articles__col
+						.articles__item
+							.articles__header
+								.articles__date 15<br>june
+								a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
+							.articles__content
+								a(href='#'): h4.articles__title WEBSITE INSPIRATION
+								.articles__cat CATEGORY 
+								.articles__text
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
+							a(class='btn btn--sm' href='#') READ MORE
+					.articles__col
+						.articles__item
+							.articles__header
+								.articles__date 20<br>june
+								a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
+							.articles__content
+								a(href='#'): h4.articles__title CHANGES IN SOCIAL MEDIA
+								.articles__cat CATEGORY 
+								.articles__text
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
+							a(class='btn btn--sm' href='#') READ MORE
+				.news__footer
+					a(class='news__link' href='#') See more posts
+		// FOOTER
+		footer.footer
+			.container
+				.footer__inner
+					.footer__credits
+						.footer__copyright © 2018 UI43 - Free Templates
+						.footer__social
+							a(href='#' terget='_blank'): img(src='images/icons/behance_f.svg' width='24' alt='')
+							a(href='#' terget='_blank'): img(src='images/icons/dri.svg' alt='')
+							a(href='#' terget='_blank'): img(src='images/icons/in.svg' width='22' alt='')
+							a(href='#' terget='_blank'): img(src='images/icons/face.svg' width='20' alt='')
+							a(href='#' terget='_blank'): img(src='images/icons/insta.svg' width='20' alt='')
+							a(href='#' terget='_blank'): img(src='images/icons/twitter_f.svg' width='22' alt='')
+					nav.footer__nav
+						a(class='footer__nav-link' href='#') Work
+						a(class='footer__nav-link' href='#') About Me
+						a(class='footer__nav-link' href='#') Blog
+						a(class='footer__nav-link' href='#') Contact
+						a(class='footer__nav-link btn' href='#') HIRE ME
