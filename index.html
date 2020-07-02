@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200,300;0,400;0,700;1,300&amp;display=swap"/>
   </head>
-  <body>
+  <body class="no-scroll">
     <!-- HEADER-->
     <header class="header">
       <div class="container">
@@ -245,13 +245,38 @@
         <div class="footer__inner">
           <div class="footer__credits">
             <div class="footer__copyright">© 2018 UI43 - Free Templates</div>
-            <div class="footer__social">
-            	<a href="#" terget="_blank"><img src="images/icons/behance_f.svg" width="24" alt=""/></a>
-            	<a href="#" terget="_blank"><img src="images/icons/dri.svg" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/in.svg" width="22" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/face.svg" width="20" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/insta.svg" width="20" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/twitter_f.svg" width="22" alt=""/></a></div>
+            <div class="footer__social"><a href="#" terget="_blank"><img src="images/icons/behance_f.svg" width="24" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/dri.svg" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/in.svg" width="22" alt=""/></a><a href="https://www.facebook.com" terget="_blank"><img src="images/icons/face.svg" width="20" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/insta.svg" width="20" alt=""/></a><a href="#" terget="_blank"><img src="images/icons/twitter_f.svg" width="22" alt=""/></a></div>
           </div>
           <nav class="footer__nav"><a class="footer__nav-link" href="#">Work</a><a class="footer__nav-link" href="#">About Me</a><a class="footer__nav-link" href="#">Blog</a><a class="footer__nav-link" href="#">Contact</a><a class="footer__nav-link btn" href="#">HIRE ME</a></nav>
         </div>
       </div>
     </footer>
+    <!-- MODALS-->
+    <div class="modal">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button"><img src="images/icons/close.svg" alt=""/></button>
+        <div class="modal-work">
+          <div class="modal-work__preview"><img class="modal-work__img" src="https://placehold.it/790x775/#2F4F4F" alt=""/></div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">PROJECT TITLE</h3>
+              <div class="modal-work__info">CATEGORY <span class="modal-work__info_divider">|</span> 2018</div>
+            </div>
+            <div class="modal-work__client">
+              <div class="modal-work__client_title">Client:</div>
+              <div class="modal-work__client_text">Creative Agency</div>
+            </div>
+            <div class="modal-work__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum animi debitis, error officiis et numquam recusandae aliquam. Aut, perspiciatis aliquid quo, dolores maiores natus, iusto velit sed exercitationem quidem sequi.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur et provident labore necessitatibus eum doloremque error, dicta officiis facere temporibus? Aspernatur, fugit. Et temporibus quaerat iusto explicabo dicta, consequuntur.</p>
+            </div>
+            <div class="modal-work__footer">
+              <button class="modal-work__btn modal-work__btn--prev" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous </button>
+              <button class="modal-work__btn modal-work__btn--next" type="button">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><script src="https://use.fontawesome.com/85c6050e24.js"></script>
   </body>
 </html>
