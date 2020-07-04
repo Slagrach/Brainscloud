@@ -5,8 +5,7 @@ html(lang="zxx")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title Portfolio
 		link(rel="stylesheet" href="css/style.css")
-		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200,300;0,400;0,700;1,300&display=swap")
-	body.no-scroll
+	body
 		// HEADER
 		header.header
 			.container
@@ -63,74 +62,74 @@ html(lang="zxx")
 		.works
 			.container
 				.works__nav
-					a(class="works__nav-link" href="#") All
+					a(class="works__nav-link" href="#" data-filter='all') All
 					|
 					|
-					a(class="works__nav-link" href="#") App
+					a(class="works__nav-link" href="#" data-filter='app') App
 					|
 					|
-					a(class="works__nav-link" href="#") Websites
+					a(class="works__nav-link" href="#" data-filter='websites') Websites
 					|
 					|
-					a(class="works__nav-link" href="#") Interaction
+					a(class="works__nav-link" href="#" data-filter='interaction') Interaction
 				.portfolio
-					.portfolio__col
+					.portfolio__col(data-cat='app')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='interaction')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='app')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='interaction')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='interaction')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='app')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='.work__dat' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='websites')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='websites')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col
+					.portfolio__col(data-cat='interaction')
 						.work
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
@@ -220,12 +219,12 @@ html(lang="zxx")
 					.footer__credits
 						.footer__copyright © 2018 UI43 - Free Templates
 						.footer__social
-							a(href='#' terget='_blank'): img(src='images/icons/behance_f.svg' width='24' alt='')
-							a(href='#' terget='_blank'): img(src='images/icons/dri.svg' alt='')
-							a(href='#' terget='_blank'): img(src='images/icons/in.svg' width='22' alt='')
-							a(href='https://www.facebook.com' terget='_blank'): img(src='images/icons/face.svg' width='20' alt='')
-							a(href='#' terget='_blank'): img(src='images/icons/insta.svg' width='20' alt='')
-							a(href='#' terget='_blank'): img(src='images/icons/twitter_f.svg' width='22' alt='')
+							a(href='#' target='_blank'): img(src='images/icons/behance_f.svg' width='24' alt='')
+							a(href='#' target='_blank'): img(src='images/icons/dri.svg' alt='')
+							a(href='#' target='_blank'): img(src='images/icons/in.svg' width='22' alt='')
+							a(href='https://www.facebook.com' target='_blank'): img(src='images/icons/face.svg' width='20' alt='')
+							a(href='#' target='_blank'): img(src='images/icons/insta.svg' width='20' alt='')
+							a(href='#' target='_blank'): img(src='images/icons/twitter_f.svg' width='22' alt='')
 					nav.footer__nav
 						a(class='footer__nav-link' href='#') Work
 						a(class='footer__nav-link' href='#') About Me
@@ -236,3 +235,5 @@ html(lang="zxx")
 		include includes/modal-resume.pug
 		include includes/modal-contact.pug
 		<script src="https://use.fontawesome.com/85c6050e24.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		script(src='js/app.js')
