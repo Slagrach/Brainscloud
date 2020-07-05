@@ -4,6 +4,7 @@ html(lang="zxx")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title Portfolio
+		link(rel="icon" href="images/favicon.png" type='image/x-icon')
 		link(rel="stylesheet" href="css/style.css")
 	body
 		// HEADER
@@ -29,7 +30,7 @@ html(lang="zxx")
 						a(class='nav__link' href="#") contact
 						|
 						|
-						a(class='nav__link nav__link--btn' href="#") hire me
+						a(class='nav__link nav__link--btn' data-modal='#modal_contact' href="#") hire me
 		// INTRO
 		section.intro
 			.container
@@ -55,8 +56,8 @@ html(lang="zxx")
 							|
 							|
 							a(class='social__link' href="#"): img(src="images/icons/t-icon.svg" width='41' height='41' alt="")
-						a(class='btn' href="#") HiRE ME
-						button(class="btn" type="button") SEE MY RESUME
+						a(class='btn' href="#" data-modal='#modal_contact') HiRE ME
+						button(class="btn" type="button" data-modal='#modal_resume') SEE MY RESUME
 					img(class="intro__photo" src="images/photo.png" alt="")
 		// WORKS
 		.works
@@ -74,63 +75,63 @@ html(lang="zxx")
 					a(class="works__nav-link" href="#" data-filter='interaction') Interaction
 				.portfolio
 					.portfolio__col(data-cat='app')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='interaction')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='app')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='interaction')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='interaction')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='app')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='.work__dat' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='websites')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='websites')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='interaction')
-						.work
+						.work(data-modal='#modal_project')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
@@ -151,8 +152,8 @@ html(lang="zxx")
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illum tenetur eligendi possimus ratione dignissimos, doloremque fugit in, suscipit accusantium, provident nihil est dolore cum aperiam labore nostrum! Magni.
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit quisquam eaque quis sequi sunt, delectus facilis unde ipsam eius deleniti laboriosam nemo officiis distinctio maiores, at esse veritatis architecto.
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, illo, consectetur consequatur, distinctio aspernatur est sequi veritatis officia ex dolore expedita corrupti provident laudantium quo debitis quam itaque nemo esse.
-						a(class='btn' href='#') HIRE ME
-						button(class='btn' type='button') SEE MY RESUME
+						a(class='btn' data-modal='#modal_contact' href='#') HIRE ME
+						button(class='btn' data-modal='#modal_resume' type='button') SEE MY RESUME
 		// REVIEWS
 		.reviews
 			.container
@@ -230,7 +231,7 @@ html(lang="zxx")
 						a(class='footer__nav-link' href='#') About Me
 						a(class='footer__nav-link' href='#') Blog
 						a(class='footer__nav-link' href='#') Contact
-						a(class='footer__nav-link btn' href='#') HIRE ME
+						a(class='footer__nav-link btn' data-modal='#modal_contact' href='#') HIRE ME
 		include includes/modal-project.pug
 		include includes/modal-resume.pug
 		include includes/modal-contact.pug

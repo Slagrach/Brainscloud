@@ -737,7 +737,7 @@ p {
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\000033}}
 .modal {
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -750,6 +750,11 @@ p {
 }
 /* line 17, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000317}}
+.modal.show {
+  display: flex;
+}
+/* line 21, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000321}}
 .modal__dialog {
   width: 100%;
   max-width: 1200px;
@@ -757,14 +762,16 @@ p {
   background-color: #fafafa;
   border: 1px solid #707070;
   position: relative;
+  transform: rotateX(90deg);
+  transform: transform 0.2s linear;
 }
-/* line 27, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000327}}
+/* line 34, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000334}}
 .modal__dialog--sm {
   max-width: 900px;
 }
-/* line 31, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000331}}
+/* line 38, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000338}}
 .modal__close {
   position: absolute;
   top: 1rem;
@@ -778,26 +785,26 @@ p {
   cursor: pointer;
   transition: transform 0.2s linear;
 }
-/* line 48, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000348}}
+/* line 55, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000355}}
 .modal__close:hover {
   transform: rotate(90deg);
 }
-/* line 52, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000352}}
+/* line 59, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000359}}
 .modal__close:active,
 .modal__close:focus {
   border: 0;
   outline: none;
   background: none;
 }
-/* line 59, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000359}}
+/* line 66, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000366}}
 .modal__content {
   padding: 5.26rem 1rem 4.46rem 1rem;
 }
-/* line 62, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000362}}
+/* line 69, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\0000369}}
 .modal__title {
   font-size: 3rem;
   font-weight: bold;
@@ -1158,7 +1165,7 @@ p {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/contact\.less}line{font-family:\0000334}}
 .contact-right {
   width: 53%;
-  background: #2B2A2C url(http://dummyimage.com/480x680/) center no-repeat;
+  background: #2B2A2C url(https://dummyimage.com/480x680/) center no-repeat;
 }
 /* line 4, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\form.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/form\.less}line{font-family:\000034}}
