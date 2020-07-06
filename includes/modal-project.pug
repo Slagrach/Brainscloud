@@ -4,7 +4,11 @@
 		button(class='modal__close' data-close type='button'): img(src='images/icons/close.svg' alt='')
 		.modal-work
 			.modal-work__preview
-				img(class='modal-work__img' src='https://placehold.it/790x775/#2F4F4F' alt='')
+				div(data-slider='slick')
+					div
+						img(class='modal-work__img img' src='../images/test_1.jpg' alt='')
+					div
+						img(class='modal-work__img img' src='../images/test_2.jpg' alt='')
 			.modal-work__content
 				.modal-work__header
 					h3.modal-work__title PROJECT TITLE
@@ -16,5 +20,29 @@
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum animi debitis, error officiis et numquam recusandae aliquam. Aut, perspiciatis aliquid quo, dolores maiores natus, iusto velit sed exercitationem quidem sequi.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur et provident labore necessitatibus eum doloremque error, dicta officiis facere temporibus? Aspernatur, fugit. Et temporibus quaerat iusto explicabo dicta, consequuntur.
 				.modal-work__footer
-					button(class='modal-work__btn modal-work__btn--prev' type='button') <i class="fa fa-angle-left" aria-hidden="true"></i> Previous 
-					button(class='modal-work__btn modal-work__btn--next' type='button') Next <i class="fa fa-angle-right" aria-hidden="true"></i>
+					button(class='modal-work__btn modal-work__btn--prev slickPrev' type='button') <i class="fa fa-angle-left" aria-hidden="true"></i> Previous 
+					button(class='modal-work__btn modal-work__btn--next slickNext' type='button') Next <i class="fa fa-angle-right" aria-hidden="true"></i>
+// MODALS_PROJECT_2-test
+.modal(id='modal_project_2')
+	.modal__dialog
+		button(class='modal__close' data-close type='button'): img(src='images/icons/close.svg' alt='')
+		.modal-work
+			.modal-work__preview
+				div(data-slider='slick')
+					div
+						img(class='modal-work__img img' src='../images/test_3.jpg' alt='')
+					div
+						img(class='modal-work__img img' src='../images/test_4.jpg' alt='')
+			.modal-work__content
+				.modal-work__header
+					h3.modal-work__title PROJECT TITLE_2
+					.modal-work__info CATEGORY <span class="modal-work__info_divider">|</span> 2018
+				.modal-work__client
+					.modal-work__client_title Client:
+					.modal-work__client_text Creative Agency
+				.modal-work__text
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum animi debitis, error officiis et numquam recusandae aliquam. Aut, perspiciatis aliquid quo, dolores maiores natus, iusto velit sed exercitationem quidem sequi.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur et provident labore necessitatibus eum doloremque error, dicta officiis facere temporibus? Aspernatur, fugit. Et temporibus quaerat iusto explicabo dicta, consequuntur.
+				.modal-work__footer
+					button(class='modal-work__btn modal-work__btn--prev slickPrev' type='button') <i class="fa fa-angle-left" aria-hidden="true"></i> Previous 
+					button(class='modal-work__btn modal-work__btn--next slickNext' type='button') Next <i class="fa fa-angle-right" aria-hidden="true"></i>

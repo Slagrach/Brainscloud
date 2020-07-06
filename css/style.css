@@ -72,6 +72,164 @@ h6 {
 p {
   margin: 0 0 1rem;
 }
+/* Slider */
+/* line 5, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\000035}}
+.slick-slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+/* line 21, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000321}}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* line 30, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000330}}
+.slick-list:focus {
+  outline: none;
+}
+/* line 34, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000334}}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 39, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000339}}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+/* line 48, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000348}}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+/* line 57, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000357}}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 63, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000363}}
+.slick-track:after {
+  clear: both;
+}
+/* line 67, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000367}}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+/* line 71, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000371}}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 75, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000375}}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 78, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000378}}
+.slick-slide img {
+  display: block;
+}
+/* line 81, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000381}}
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 87, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000387}}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 91, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000391}}
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 95, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000395}}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 99, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\0000399}}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+/* line 105, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\00003105}}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+/* line 108, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\00003108}}
+.slick-dots {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 0;
+  z-index: 2;
+}
+/* line 122, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\00003122}}
+.slick-dots li {
+  margin: 0 0.5rem;
+}
+/* line 126, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\00003126}}
+.slick-dots li.slick-active button {
+  background-color: #fafafa;
+}
+/* line 132, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\vendor\slick.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/vendor\/slick\.less}line{font-family:\00003132}}
+.slick-dots button {
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border: 1px solid #fafafa;
+  border-radius: 50%;
+  background: transparent;
+  outline: none;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+}
 /* BLOCK */
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\container.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/container\.less}line{font-family:\000033}}
@@ -900,6 +1058,7 @@ p {
   margin-bottom: 0.73rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -907,8 +1066,8 @@ p {
   z-index: 1;
   padding: 0 1.33rem 0 1.73rem;
 }
-/* line 75, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000375}}
+/* line 76, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000376}}
 .modal-work__btn {
   background: none;
   border: 0;
@@ -919,32 +1078,32 @@ p {
   font-family: inherit;
   cursor: pointer;
 }
-/* line 87, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000387}}
+/* line 88, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000388}}
 .modal-work__btn:active,
 .modal-work__btn:focus {
   border: 0;
   outline: none;
 }
-/* line 93, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000393}}
+/* line 94, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000394}}
 .modal-work__btn--prev:hover {
   transform: scale(1.2);
   transition: 0.4s;
 }
-/* line 98, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000398}}
+/* line 99, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\0000399}}
 .fa-angle-left {
   padding-right: 0.53rem;
 }
-/* line 102, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\00003102}}
+/* line 103, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\00003103}}
 .modal-work__btn--next:hover {
   transform: scale(1.2);
   transition: 0.4s;
 }
-/* line 107, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\00003107}}
+/* line 108, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal-work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal-work\.less}line{font-family:\00003108}}
 .fa-angle-right {
   padding-left: 0.53rem;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Portfolio</title>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="interaction">
-            <div class="work" data-modal="#modal_project"><img class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt=""/>
+            <div class="work" data-modal="#modal_project_2"><img class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt=""/>
               <div class="work__content">
                 <div class="work__cat">CATEGORY</div>
                 <div class="work__title">PROJECT TITLE
@@ -256,7 +256,12 @@
       <div class="modal__dialog">
         <button class="modal__close" data-close="data-close" type="button"><img src="images/icons/close.svg" alt=""/></button>
         <div class="modal-work">
-          <div class="modal-work__preview"><img class="modal-work__img" src="https://placehold.it/790x775/#2F4F4F" alt=""/></div>
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div><img class="modal-work__img img" src="../images/test_1.jpg" alt=""/></div>
+              <div><img class="modal-work__img img" src="../images/test_2.jpg" alt=""/></div>
+            </div>
+          </div>
           <div class="modal-work__content">
             <div class="modal-work__header">
               <h3 class="modal-work__title">PROJECT TITLE</h3>
@@ -271,8 +276,40 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur et provident labore necessitatibus eum doloremque error, dicta officiis facere temporibus? Aspernatur, fugit. Et temporibus quaerat iusto explicabo dicta, consequuntur.</p>
             </div>
             <div class="modal-work__footer">
-              <button class="modal-work__btn modal-work__btn--prev" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous </button>
-              <button class="modal-work__btn modal-work__btn--next" type="button">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous </button>
+              <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODALS_PROJECT_2-test-->
+    <div class="modal" id="modal_project_2">
+      <div class="modal__dialog">
+        <button class="modal__close" data-close="data-close" type="button"><img src="images/icons/close.svg" alt=""/></button>
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <div data-slider="slick">
+              <div><img class="modal-work__img img" src="../images/test_3.jpg" alt=""/></div>
+              <div><img class="modal-work__img img" src="../images/test_4.jpg" alt=""/></div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">PROJECT TITLE_2</h3>
+              <div class="modal-work__info">CATEGORY <span class="modal-work__info_divider">|</span> 2018</div>
+            </div>
+            <div class="modal-work__client">
+              <div class="modal-work__client_title">Client:</div>
+              <div class="modal-work__client_text">Creative Agency</div>
+            </div>
+            <div class="modal-work__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum animi debitis, error officiis et numquam recusandae aliquam. Aut, perspiciatis aliquid quo, dolores maiores natus, iusto velit sed exercitationem quidem sequi.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur et provident labore necessitatibus eum doloremque error, dicta officiis facere temporibus? Aspernatur, fugit. Et temporibus quaerat iusto explicabo dicta, consequuntur.</p>
+            </div>
+            <div class="modal-work__footer">
+              <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous </button>
+              <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
             </div>
           </div>
         </div>
@@ -435,7 +472,7 @@
         </div>
       </div>
     </div><script src="https://use.fontawesome.com/85c6050e24.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

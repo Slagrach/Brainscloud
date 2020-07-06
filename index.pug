@@ -5,6 +5,7 @@ html(lang="zxx")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title Portfolio
 		link(rel="icon" href="images/favicon.png" type='image/x-icon')
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		link(rel="stylesheet" href="css/style.css")
 	body
 		// HEADER
@@ -82,7 +83,7 @@ html(lang="zxx")
 								.work__title PROJECT TITLE
 									time(class='work__date' datetime='2020-06-30 17:30') 2020
 					.portfolio__col(data-cat='interaction')
-						.work(data-modal='#modal_project')
+						.work(data-modal='#modal_project_2')
 							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
 							.work__content
 								.work__cat CATEGORY
@@ -236,5 +237,5 @@ html(lang="zxx")
 		include includes/modal-resume.pug
 		include includes/modal-contact.pug
 		<script src="https://use.fontawesome.com/85c6050e24.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		script(src='js/slick.min.js')
 		script(src='js/app.js')
