@@ -18,7 +18,7 @@ html(lang="zxx")
 						.user__content
 							.user__name Lewis<br>Nathaniel
 							.user__prof UI & UX Designer
-					nav.nav
+					nav.nav(id='nav')
 						a(class='nav__link' href="#") work
 						|
 						|
@@ -32,6 +32,8 @@ html(lang="zxx")
 						|
 						|
 						a(class='nav__link nav__link--btn' data-modal='#modal_contact' href="#") hire me
+					button(class='burger' type='button' id='navToggle')
+						<i class="fa fa-bars" aria-hidden="true"></i>
 		// INTRO
 		section.intro
 			.container

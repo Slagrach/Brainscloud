@@ -245,8 +245,21 @@ p {
 .header {
   padding: 1.2rem 0;
 }
-/* line 7, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\header.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/header\.less}line{font-family:\000037}}
+@media (max-width: 767px) {
+  /* line 6, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\header.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/header\.less}line{font-family:\000036}}
+  .header {
+    background-color: #fafafa;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+}
+/* line 18, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\header.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/header\.less}line{font-family:\0000318}}
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -293,11 +306,35 @@ p {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\000033}}
 .nav {
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
   align-items: center;
 }
-/* line 10, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000310}}
+@media (max-width: 767px) {
+  /* line 9, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\000039}}
+  .nav {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: auto;
+    right: 0;
+    z-index: 1000;
+    background-color: #fafafa;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  /* line 25, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000325}}
+  .nav.show {
+    display: flex;
+  }
+}
+/* line 32, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000332}}
 .nav__link {
   font-size: 0.93rem;
   color: #2B2A2C;
@@ -308,8 +345,8 @@ p {
   position: relative;
   /* MODIFICATORS */
 }
-/* line 19, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000319}}
+/* line 41, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000341}}
 .nav__link:after {
   content: "";
   width: 0;
@@ -321,58 +358,118 @@ p {
   z-index: 1;
   transition: width 0.3s linear;
 }
-/* line 34, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000334}}
+/* line 56, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000356}}
 .nav__link:hover:not(.nav__link--btn):after {
   width: 100%;
 }
-/* line 41, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000341}}
+/* line 63, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000363}}
 .nav__link--btn {
   padding: 0.66rem 2.26rem;
   border: 2px solid #2B2A2C;
   border-radius: 20px;
   transition: backgraund-color 0.2s linear, color 0.2s linear;
 }
-/* line 48, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000348}}
+/* line 70, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000370}}
 .nav__link--btn:hover {
   background-color: #2B2A2C;
   color: #EFEFEF;
 }
-/* line 6, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\000036}}
+@media (max-width: 767px) {
+  /* line 75, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\nav.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/nav\.less}line{font-family:\0000375}}
+  .nav__link {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 767px) {
+  /* line 4, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\000034}}
+  .intro {
+    margin-top: 100px;
+  }
+}
+/* line 8, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\000038}}
 .intro__inner {
   display: flex;
   border-bottom: 1px solid rgba(106, 105, 107, 0.3);
-  padding-top: 103px;
-  padding-bottom: 123px;
+  padding-top: 6.86rem;
+  padding-bottom: 8.2rem;
   background: url("../images/symbols.png") right bottom no-repeat;
   position: relative;
 }
-/* line 16, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000316}}
+@media (max-width: 991px) {
+  /* line 14, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000314}}
+  .intro__inner {
+    padding-top: 3.86rem;
+    padding-bottom: 6.2rem;
+    background-size: 400px auto;
+  }
+}
+@media (max-width: 767px) {
+  /* line 21, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000321}}
+  .intro__inner {
+    background-size: 300px auto;
+  }
+}
+/* line 29, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000329}}
 .intro__content {
   width: 50%;
 }
-/* line 19, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000319}}
+@media (max-width: 767px) {
+  /* line 32, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000332}}
+  .intro__content {
+    width: 60%;
+  }
+}
+@media (max-width: 565px) {
+  /* line 36, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000336}}
+  .intro__content {
+    width: 100%;
+  }
+}
+/* line 40, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000340}}
 .intro__subtitle {
   font-size: 2.15rem;
   font-weight: 200;
   line-height: 3.53rem;
   color: #2B2A2C;
 }
-/* line 25, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000325}}
+@media (max-width: 991px) {
+  /* line 46, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000346}}
+  .intro__subtitle {
+    font-size: 1.5rem;
+  }
+}
+/* line 50, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000350}}
 .intro__title {
   font-size: 3rem;
   font-weight: bold;
   line-height: 3.53rem;
   color: #2B2A2C;
 }
-/* line 31, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000331}}
+@media (max-width: 991px) {
+  /* line 56, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000356}}
+  .intro__title {
+    font-size: 2rem;
+  }
+}
+/* line 60, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000360}}
 .intro__text {
   font-size: 1.2rem;
   font-weight: 400;
@@ -380,13 +477,34 @@ p {
   color: rgba(43, 42, 44, 0.7);
   margin-bottom: 26px;
 }
-/* line 38, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000338}}
+/* line 67, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000367}}
 .intro__photo {
   position: absolute;
   bottom: 0;
   right: 5px;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  /* line 73, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000373}}
+  .intro__photo {
+    width: 371px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 77, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000377}}
+  .intro__photo {
+    width: 300px;
+  }
+}
+@media (max-width: 565px) {
+  /* line 81, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\intro.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/intro\.less}line{font-family:\0000381}}
+  .intro__photo {
+    display: none;
+  }
 }
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\social.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/social\.less}line{font-family:\000033}}
@@ -396,13 +514,18 @@ p {
 }
 /* line 7, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\social.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/social\.less}line{font-family:\000037}}
+.social:last-child {
+  margin-right: 0;
+}
+/* line 11, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/social\.less}line{font-family:\0000311}}
 .social__link {
   text-decoration: none;
   margin-right: 10px;
   transition: transform 0.2s linear;
 }
-/* line 13, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\social.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/social\.less}line{font-family:\0000313}}
+/* line 17, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/social\.less}line{font-family:\0000317}}
 .social__link:hover {
   transform: translateY(-5px);
 }
@@ -467,6 +590,29 @@ p {
   padding: 1.06rem 4.13rem;
   margin-top: 0.26rem;
 }
+@media (max-width: 991px) {
+  /* line 62, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\btn.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/btn\.less}line{font-family:\0000362}}
+  .btn {
+    font-size: 1rem;
+    padding: 1em 1.5em;
+    min-width: 140px;
+  }
+}
+@media (max-width: 565px) {
+  /* line 68, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\btn.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/btn\.less}line{font-family:\0000368}}
+  .btn {
+    display: block;
+    width: 100%;
+  }
+  /* line 72, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\btn.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/btn\.less}line{font-family:\0000372}}
+  .btn + .btn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\works.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/works\.less}line{font-family:\000033}}
 .works {
@@ -507,6 +653,20 @@ p {
   flex-basis: 33.33333%;
   padding: 1.4rem;
 }
+@media (max-width: 767px) {
+  /* line 12, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\portfolio.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/portfolio\.less}line{font-family:\0000312}}
+  .portfolio__col {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 565px) {
+  /* line 16, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\portfolio.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/portfolio\.less}line{font-family:\0000316}}
+  .portfolio__col {
+    flex-basis: 100%;
+  }
+}
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\000033}}
 .work {
@@ -520,20 +680,34 @@ p {
 .work:hover {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
-/* line 14, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000314}}
+@media (max-width: 767px) {
+  /* line 14, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000314}}
+  .work {
+    max-width: 370px;
+  }
+}
+@media (max-width: 565px) {
+  /* line 18, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000318}}
+  .work {
+    margin: 0 auto;
+  }
+}
+/* line 22, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000322}}
 .work__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* line 19, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000319}}
+/* line 27, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000327}}
 .work__content {
   padding: 0.93rem 1.26rem 0.46rem 0.8rem;
 }
-/* line 22, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000322}}
+/* line 30, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000330}}
 .work__cat {
   margin-bottom: 0.33rem;
   font-size: 0.8rem;
@@ -542,8 +716,8 @@ p {
   color: #2B2A2C;
   text-transform: uppercase;
 }
-/* line 30, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000330}}
+/* line 38, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\work.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/work\.less}line{font-family:\0000338}}
 .work__title {
   display: flex;
   justify-content: space-between;
@@ -558,28 +732,38 @@ p {
 .about {
   margin: 8.53rem 0;
 }
-/* line 7, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\000037}}
+@media (max-width: 991px) {
+  /* line 6, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\000036}}
+  .about {
+    margin: 4rem 0;
+  }
+}
+/* line 10, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000310}}
 .about__inner {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1080px;
 }
-/* line 11, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000311}}
+/* line 15, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000315}}
 .about__photo {
   width: 50%;
   position: relative;
 }
-/* line 15, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000315}}
+/* line 19, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000319}}
 .about__photo img {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   z-index: 2;
 }
-/* line 20, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000320}}
+/* line 25, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000325}}
 .about__photo:before {
   content: "";
+  display: block;
   width: 413px;
   height: 413px;
   background-color: #EFEFEF;
@@ -588,23 +772,80 @@ p {
   bottom: 0;
   z-index: 1;
 }
-/* line 32, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000332}}
+@media (max-width: 991px) {
+  /* line 38, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000338}}
+  .about__photo {
+    order: 2;
+    width: 100%;
+  }
+  /* line 42, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000342}}
+  .about__photo:before {
+    width: 100%;
+    height: 300px;
+    left: 0;
+  }
+  /* line 49, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000349}}
+  .about__photo img {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+/* line 55, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000355}}
 .about__content {
-  width: 50%;
   padding-left: 4rem;
   padding-top: 2rem;
+  width: 50%;
 }
-/* line 37, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000337}}
+@media (max-width: 991px) {
+  /* line 60, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000360}}
+  .about__content {
+    width: 100%;
+    order: 1;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 72, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000372}}
 .about__title {
   font-size: 3rem;
   font-weight: bold;
   line-height: 3rem;
   color: #2B2A2C;
+  text-transform: uppercase;
 }
-/* line 43, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000343}}
+@media (max-width: 1199px) {
+  /* line 79, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000379}}
+  .about__title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  /* line 83, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000383}}
+  .about__title {
+    position: static;
+  }
+}
+@media (max-width: 767px) {
+  /* line 87, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000387}}
+  .about__title {
+    font-size: 2rem;
+  }
+}
+/* line 91, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000391}}
 .about__bigtitle {
   font-size: 6.13rem;
   font-weight: bold;
@@ -612,8 +853,15 @@ p {
   position: relative;
   right: 1rem;
 }
-/* line 50, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000350}}
+@media (max-width: 1199px) {
+  /* line 98, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\0000398}}
+  .about__bigtitle {
+    font-size: 5.13rem;
+  }
+}
+/* line 102, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\about.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/about\.less}line{font-family:\00003102}}
 .about__text {
   font-size: 0.8rem;
   font-weight: 300;
@@ -625,7 +873,7 @@ p {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/reviews\.less}line{font-family:\000033}}
 .reviews {
   background: #332F30 url("../images/bg.png") center no-repeat;
-  padding: 4.53rem 20.33rem;
+  padding: 4.53rem 0;
   position: relative;
 }
 /* line 10, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\reviews.less */
@@ -693,14 +941,22 @@ p {
   margin-top: 14rem;
   margin-bottom: 8.13rem;
 }
-/* line 8, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\000038}}
+@media (max-width: 991px) {
+  /* line 7, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\000037}}
+  .news {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+  }
+}
+/* line 13, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000313}}
 .news__header {
   margin-bottom: 3.66rem;
   text-align: center;
 }
-/* line 12, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000312}}
+/* line 17, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000317}}
 .news__title {
   font-style: 3rem;
   font-weight: bold;
@@ -708,27 +964,34 @@ p {
   text-transform: uppercase;
   color: #2B2A2C;
 }
-/* line 19, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000319}}
+@media (max-width: 767px) {
+  /* line 24, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000324}}
+  .news__title {
+    font-size: 2rem;
+  }
+}
+/* line 28, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000328}}
 .news__text {
   font-size: 1.2rem;
   font-weight: 300;
   color: #8C8C8D;
 }
-/* line 25, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000325}}
+/* line 34, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000334}}
 .news__footer {
   text-align: right;
 }
-/* line 29, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000329}}
+/* line 38, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000338}}
 .news__link {
   font-size: 0.93rem;
   font-weight: 400;
   color: #6A696B;
 }
-/* line 34, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000334}}
+/* line 43, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\news.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/news\.less}line{font-family:\0000343}}
 .news__link:hover {
   text-decoration: none;
 }
@@ -745,31 +1008,46 @@ p {
   width: 33.33333%;
   padding: 0 1rem;
 }
-/* line 13, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000313}}
+@media (max-width: 767px) {
+  /* line 13, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000313}}
+  .articles__col {
+    width: 100%;
+  }
+}
+/* line 17, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000317}}
 .articles__item {
   margin-bottom: 2rem;
 }
-/* line 16, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000316}}
+@media (max-width: 767px) {
+  /* line 20, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000320}}
+  .articles__item {
+    max-width: 370px;
+    margin: 0 auto 2rem;
+  }
+}
+/* line 25, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000325}}
 .articles__item .btn {
   font-size: 0.93rem;
   font-weight: 400;
   border-color: #6A696B;
 }
-/* line 21, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000321}}
+/* line 30, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000330}}
 .articles__item .btn:hover {
   border-color: #2B2A2C;
 }
-/* line 29, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000329}}
+/* line 38, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000338}}
 .articles__header {
   position: relative;
   margin-bottom: 1.2rem;
 }
-/* line 35, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000335}}
+/* line 44, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000344}}
 .articles__date {
   position: absolute;
   top: 0;
@@ -787,34 +1065,34 @@ p {
   width: 77px;
   height: 77px;
 }
-/* line 59, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000359}}
+/* line 68, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000368}}
 .articles__content a {
   color: #2B2A2C;
   text-decoration: none;
 }
-/* line 63, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000363}}
+/* line 72, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000372}}
 .articles__content a:hover {
   text-decoration: underline;
 }
-/* line 68, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000368}}
+/* line 77, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000377}}
 .articles__title {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #2B2A2C;
 }
-/* line 74, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000374}}
+/* line 83, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000383}}
 .articles__cat {
   font-size: 0.8rem;
   font-weight: 400;
   padding: 0.46rem 0 1.53rem 0;
 }
-/* line 79, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000379}}
+/* line 88, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\articles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/articles\.less}line{font-family:\0000388}}
 .articles__text {
   font-size: 0.8rem;
   font-weight: 300;
@@ -828,10 +1106,11 @@ p {
   background-color: #2B2A2C;
   padding: 0.86rem 0;
 }
-/* line 9, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\000039}}
+/* line 8, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\000038}}
 .footer__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 /* line 13, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
@@ -840,8 +1119,24 @@ p {
   display: flex;
   align-items: center;
 }
-/* line 17, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000317}}
+@media (max-width: 991px) {
+  /* line 17, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000317}}
+  .footer__credits {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 565px) {
+  /* line 23, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000323}}
+  .footer__credits {
+    flex-direction: column;
+  }
+}
+/* line 27, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000327}}
 .footer__copyright {
   font-size: 0.93rem;
   font-weight: 400;
@@ -850,26 +1145,58 @@ p {
   border-right: 1px solid rgba(106, 105, 107, 0.35);
   padding-right: 2rem;
 }
-/* line 26, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000326}}
+@media (max-width: 565px) {
+  /* line 36, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000336}}
+  .footer__copyright {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    border-right: 0;
+    padding-right: 0;
+  }
+}
+/* line 43, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000343}}
 .footer__social {
   padding-left: 2rem;
   display: flex;
   align-items: center;
 }
-/* line 31, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000331}}
+/* line 48, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000348}}
 .footer__social a {
   padding-right: 1rem;
 }
-/* line 35, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000335}}
+@media (max-width: 991px) {
+  /* line 51, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000351}}
+  .footer__social a {
+    margin: 0 0.5rem;
+  }
+}
+@media (max-width: 565px) {
+  /* line 55, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000355}}
+  .footer__social a {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 565px) {
+  /* line 61, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000361}}
+  .footer__social {
+    padding-left: 0;
+  }
+}
+/* line 65, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000365}}
 .footer__nav {
   display: flex;
   align-items: center;
 }
-/* line 39, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000339}}
+/* line 69, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000369}}
 .footer__nav .btn {
   padding: 0.6rem 1.66rem;
   margin-left: 2.2rem;
@@ -877,20 +1204,50 @@ p {
   border-radius: 20px;
   line-height: 1.06;
 }
-/* line 46, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000346}}
+/* line 76, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000376}}
 .footer__nav .btn:hover {
   background-color: #8D8D8E;
   color: #2B2A2C;
 }
-/* line 53, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000353}}
+@media (max-width: 565px) {
+  /* line 81, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000381}}
+  .footer__nav .btn {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 991px) {
+  /* line 86, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000386}}
+  .footer__nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* line 93, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\0000393}}
 .footer__nav-link {
   text-decoration: none;
   color: #8D8D8E;
   font-size: 0.93rem;
   padding-left: 1rem;
   letter-spacing: 0.03rem;
+}
+@media (max-width: 991px) {
+  /* line 100, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\00003100}}
+  .footer__nav-link {
+    margin: 0 0.5rem 0.5rem;
+  }
+}
+@media (max-width: 565px) {
+  /* line 104, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\footer.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/footer\.less}line{font-family:\00003104}}
+  .footer__nav-link {
+    padding: 0 0.4rem;
+  }
 }
 /* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\modal.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/modal\.less}line{font-family:\000033}}
@@ -1372,6 +1729,24 @@ p {
 .form__textarea {
   height: 200px;
   resize: none;
+}
+/* line 3, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\burger.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/burger\.less}line{font-family:\000033}}
+.burger {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: none;
+  margin-right: 1rem;
+}
+@media (max-width: 767px) {
+  /* line 15, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\blocks\burger.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/slagrach\/Desktop\/MySite\/Brainscloud\/css\/blocks\/burger\.less}line{font-family:\0000315}}
+  .burger {
+    display: block;
+  }
 }
 /* HELPERS */
 /* line 2, C:\Users\slagrach\Desktop\MySite\Brainscloud\css\helpers.less */
