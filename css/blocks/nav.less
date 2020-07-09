@@ -50,6 +50,12 @@
 		z-index: 1;
 
 		transition: width .3s linear;
+
+		@media @mobile {
+			&:last-child {
+
+			}
+    }
 	}
 
 	&:hover:not(.nav__link--btn) {
@@ -71,6 +77,11 @@
 			background-color: @black;
 			color: @white;
 		}
+		@media @mobile {
+			&:last-child {
+				margin-top: 1rem;
+			}
+    }
 	}
 	@media @mobile {
         width: 100%;

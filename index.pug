@@ -8,233 +8,234 @@ html(lang="zxx")
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		link(rel="stylesheet" href="css/style.css")
 	body
-		// HEADER
-		header.header
-			.container
-				.header__inner
-					.user
-						.user__avatar
-							img(src="https://place-hold.it/57/003366" alt="Lewis Nathaniel")
-						.user__content
-							.user__name Lewis<br>Nathaniel
-							.user__prof UI & UX Designer
-					nav.nav(id='nav')
-						a(class='nav__link' href="#") work
+		.wrapper
+			// HEADER
+			header.header
+				.container
+					.header__inner
+						.user
+							.user__avatar
+								img(src="https://place-hold.it/57/003366" alt="Lewis Nathaniel")
+							.user__content
+								.user__name Lewis<br>Nathaniel
+								.user__prof UI & UX Designer
+						nav.nav(id='nav')
+							a(class='nav__link' href="#") work
+							|
+							|
+							a(class='nav__link' href="#") about me
+							|
+							|
+							a(class='nav__link' href="#") blog
+							|
+							|
+							a(class='nav__link' href="#") contact
+							|
+							|
+							a(class='nav__link nav__link--btn' data-modal='#modal_contact' href="#") hire me
+						button(class='burger' type='button' id='navToggle')
+							<i class="fa fa-bars" aria-hidden="true"></i>
+			// INTRO
+			section.intro
+				.container
+					.intro__inner
+						.intro__content
+							h2.intro__subtitle Hello, I’m
+							h1.intro__title Lewis Nathaniel
+							.intro__text UI & UX Designer
+							.social
+								a(class='social__link' href="#"): img(src="images/icons/behance.svg" width='41' height='41' alt="")
+								|
+								|
+								a(class='social__link' href="#"): img(src="images/icons/dribbble.svg" width='41' height='41' alt="")
+								|
+								|
+								a(class='social__link' href="#"): img(src="images/icons/linkedin.svg" width='41' height='41' alt="")
+								|
+								|
+								a(class='social__link' href="#"): img(src="images/icons/f-icon.svg" width='41' height='41' alt="")
+								|
+								|
+								a(class='social__link' href="#"): img(src="images/icons/i-icon.svg" width='41' height='41' alt="")
+								|
+								|
+								a(class='social__link' href="#"): img(src="images/icons/t-icon.svg" width='41' height='41' alt="")
+							a(class='btn' href="#" data-modal='#modal_contact') HiRE ME
+							button(class="btn" type="button" data-modal='#modal_resume') SEE MY RESUME
+						img(class="intro__photo" src="images/photo.png" alt="")
+			// WORKS
+			.works
+				.container
+					.works__nav
+						a(class="works__nav-link" href="#" data-filter='all') All
 						|
 						|
-						a(class='nav__link' href="#") about me
+						a(class="works__nav-link" href="#" data-filter='app') App
 						|
 						|
-						a(class='nav__link' href="#") blog
+						a(class="works__nav-link" href="#" data-filter='websites') Websites
 						|
 						|
-						a(class='nav__link' href="#") contact
-						|
-						|
-						a(class='nav__link nav__link--btn' data-modal='#modal_contact' href="#") hire me
-					button(class='burger' type='button' id='navToggle')
-						<i class="fa fa-bars" aria-hidden="true"></i>
-		// INTRO
-		section.intro
-			.container
-				.intro__inner
-					.intro__content
-						h2.intro__subtitle Hello, I’m
-						h1.intro__title Lewis Nathaniel
-						.intro__text UI & UX Designer
-						.social
-							a(class='social__link' href="#"): img(src="images/icons/behance.svg" width='41' height='41' alt="")
-							|
-							|
-							a(class='social__link' href="#"): img(src="images/icons/dribbble.svg" width='41' height='41' alt="")
-							|
-							|
-							a(class='social__link' href="#"): img(src="images/icons/linkedin.svg" width='41' height='41' alt="")
-							|
-							|
-							a(class='social__link' href="#"): img(src="images/icons/f-icon.svg" width='41' height='41' alt="")
-							|
-							|
-							a(class='social__link' href="#"): img(src="images/icons/i-icon.svg" width='41' height='41' alt="")
-							|
-							|
-							a(class='social__link' href="#"): img(src="images/icons/t-icon.svg" width='41' height='41' alt="")
-						a(class='btn' href="#" data-modal='#modal_contact') HiRE ME
-						button(class="btn" type="button" data-modal='#modal_resume') SEE MY RESUME
-					img(class="intro__photo" src="images/photo.png" alt="")
-		// WORKS
-		.works
-			.container
-				.works__nav
-					a(class="works__nav-link" href="#" data-filter='all') All
-					|
-					|
-					a(class="works__nav-link" href="#" data-filter='app') App
-					|
-					|
-					a(class="works__nav-link" href="#" data-filter='websites') Websites
-					|
-					|
-					a(class="works__nav-link" href="#" data-filter='interaction') Interaction
-				.portfolio
-					.portfolio__col(data-cat='app')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='interaction')
-						.work(data-modal='#modal_project_2')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='app')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='interaction')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='interaction')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='app')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='.work__dat' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='websites')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='websites')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='work__date' datetime='2020-06-30 17:30') 2020
-					.portfolio__col(data-cat='interaction')
-						.work(data-modal='#modal_project')
-							img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
-							.work__content
-								.work__cat CATEGORY
-								.work__title PROJECT TITLE
-									time(class='.work__dat' datetime='2020-06-30 17:30') 2020
-				.text-center
-					a(class="btn btn--sm" href="#") LOAD MORE WORK
-		// ABOUT
-		section.about
-			.container
-				.about__inner
-					.about__photo
-						img(class='img' src='images/designer_photo.png' alt='')
-					.about__content
-						h3(class='about__title') ABOUT ME
-						h2(class='about__bigtitle') WHO AM I
-						.about__text
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illum tenetur eligendi possimus ratione dignissimos, doloremque fugit in, suscipit accusantium, provident nihil est dolore cum aperiam labore nostrum! Magni.
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit quisquam eaque quis sequi sunt, delectus facilis unde ipsam eius deleniti laboriosam nemo officiis distinctio maiores, at esse veritatis architecto.
-							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, illo, consectetur consequatur, distinctio aspernatur est sequi veritatis officia ex dolore expedita corrupti provident laudantium quo debitis quam itaque nemo esse.
-						a(class='btn' data-modal='#modal_contact' href='#') HIRE ME
-						button(class='btn' data-modal='#modal_resume' type='button') SEE MY RESUME
-		// REVIEWS
-		.reviews
-			.container
-				.reviews__item
-					.reviews__text
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, cupiditate ab officiis. Quam quisquam molestiae earum ipsam voluptate ducimus necessitatibus inventore, eveniet tempore voluptatum quod voluptatem, ut saepe placeat ipsum!
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatem facilis ipsa consequuntur, itaque quisquam animi cupiditate voluptates deserunt porro cumque, quis nesciunt laborum. Nisi, omnis consectetur nesciunt sed quod!
-					.reviews__author
-						img(class='reviews__photo' src='https://place-hold.it/103/003366' alt='')
-						.reviews__name Edward M. Brooks
-						.reviews__company Marketing House
-						.reviews__rating
-							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
-							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
-							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
-							img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
-							img(class='reviews__star reviews__star--unactive' src='images/star.svg' alt='' width='13' height='13')
-		// NEWS
-		section.news
-			.container
-				.news__header
-					h3.news__title READ ME
-					.news__text Sometimes i write something smart
-				.articles
-					.articles__col
-						.articles__item
-							.articles__header
-								.articles__date 10<br>june
-								a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
-							.articles__content
-								a(href='#'): h4.articles__title TEN THE BEST APP IN 2017
-								.articles__cat CATEGORY 
-								.articles__text
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
-							a(class='btn btn--sm' href='#') READ MORE
-					.articles__col
-						.articles__item
-							.articles__header
-								.articles__date 15<br>june
-								a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
-							.articles__content
-								a(href='#'): h4.articles__title WEBSITE INSPIRATION
-								.articles__cat CATEGORY 
-								.articles__text
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
-							a(class='btn btn--sm' href='#') READ MORE
-					.articles__col
-						.articles__item
-							.articles__header
-								.articles__date 20<br>june
-								a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
-							.articles__content
-								a(href='#'): h4.articles__title CHANGES IN SOCIAL MEDIA
-								.articles__cat CATEGORY 
-								.articles__text
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
-							a(class='btn btn--sm' href='#') READ MORE
-				.news__footer
-					a(class='news__link' href='#') See more posts
-		// FOOTER
-		footer.footer
-			.container
-				.footer__inner
-					.footer__credits
-						.footer__copyright © 2018 UI43 - Free Templates
-						.footer__social
-							a(href='#' target='_blank'): img(src='images/icons/behance_f.svg' width='24' alt='')
-							a(href='#' target='_blank'): img(src='images/icons/dri.svg' alt='')
-							a(href='#' target='_blank'): img(src='images/icons/in.svg' width='22' alt='')
-							a(href='https://www.facebook.com' target='_blank'): img(src='images/icons/face.svg' width='20' alt='')
-							a(href='#' target='_blank'): img(src='images/icons/insta.svg' width='20' alt='')
-							a(href='#' target='_blank'): img(src='images/icons/twitter_f.svg' width='22' alt='')
-					nav.footer__nav
-						a(class='footer__nav-link' href='#') Work
-						a(class='footer__nav-link' href='#') About Me
-						a(class='footer__nav-link' href='#') Blog
-						a(class='footer__nav-link' href='#') Contact
-						a(class='footer__nav-link btn' data-modal='#modal_contact' href='#') HIRE ME
+						a(class="works__nav-link" href="#" data-filter='interaction') Interaction
+					.portfolio
+						.portfolio__col(data-cat='app')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='interaction')
+							.work(data-modal='#modal_project_2')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='app')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='interaction')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='interaction')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='app')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='.work__dat' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='websites')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='websites')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='work__date' datetime='2020-06-30 17:30') 2020
+						.portfolio__col(data-cat='interaction')
+							.work(data-modal='#modal_project')
+								img(class="work__img" src="https://placehold.it/370x300/#2F4F4F" alt="")
+								.work__content
+									.work__cat CATEGORY
+									.work__title PROJECT TITLE
+										time(class='.work__dat' datetime='2020-06-30 17:30') 2020
+					.text-center
+						a(class="btn btn--sm" href="#") LOAD MORE WORK
+			// ABOUT
+			section.about
+				.container
+					.about__inner
+						.about__photo
+							img(class='img' src='images/designer_photo.png' alt='')
+						.about__content
+							h3(class='about__title') ABOUT ME
+							h2(class='about__bigtitle') WHO AM I
+							.about__text
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus illum tenetur eligendi possimus ratione dignissimos, doloremque fugit in, suscipit accusantium, provident nihil est dolore cum aperiam labore nostrum! Magni.
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit quisquam eaque quis sequi sunt, delectus facilis unde ipsam eius deleniti laboriosam nemo officiis distinctio maiores, at esse veritatis architecto.
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, illo, consectetur consequatur, distinctio aspernatur est sequi veritatis officia ex dolore expedita corrupti provident laudantium quo debitis quam itaque nemo esse.
+							a(class='btn' data-modal='#modal_contact' href='#') HIRE ME
+							button(class='btn' data-modal='#modal_resume' type='button') SEE MY RESUME
+			// REVIEWS
+			.reviews
+				.container
+					.reviews__item
+						.reviews__text
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, cupiditate ab officiis. Quam quisquam molestiae earum ipsam voluptate ducimus necessitatibus inventore, eveniet tempore voluptatum quod voluptatem, ut saepe placeat ipsum!
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatem facilis ipsa consequuntur, itaque quisquam animi cupiditate voluptates deserunt porro cumque, quis nesciunt laborum. Nisi, omnis consectetur nesciunt sed quod!
+						.reviews__author
+							img(class='reviews__photo' src='https://place-hold.it/103/003366' alt='')
+							.reviews__name Edward M. Brooks
+							.reviews__company Marketing House
+							.reviews__rating
+								img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+								img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+								img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+								img(class='reviews__star' src='images/star.svg' alt='' width='13' height='13')
+								img(class='reviews__star reviews__star--unactive' src='images/star.svg' alt='' width='13' height='13')
+			// NEWS
+			section.news
+				.container
+					.news__header
+						h3.news__title READ ME
+						.news__text Sometimes i write something smart
+					.articles
+						.articles__col
+							.articles__item
+								.articles__header
+									.articles__date 10<br>june
+									a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
+								.articles__content
+									a(href='#'): h4.articles__title TEN THE BEST APP IN 2017
+									.articles__cat CATEGORY 
+									.articles__text
+										p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
+								a(class='btn btn--sm' href='#') READ MORE
+						.articles__col
+							.articles__item
+								.articles__header
+									.articles__date 15<br>june
+									a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
+								.articles__content
+									a(href='#'): h4.articles__title WEBSITE INSPIRATION
+									.articles__cat CATEGORY 
+									.articles__text
+										p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
+								a(class='btn btn--sm' href='#') READ MORE
+						.articles__col
+							.articles__item
+								.articles__header
+									.articles__date 20<br>june
+									a(href='#'): img(class="articles__photo img" src='https://placehold.it/370x257/#2F4F4F' alt='')
+								.articles__content
+									a(href='#'): h4.articles__title CHANGES IN SOCIAL MEDIA
+									.articles__cat CATEGORY 
+									.articles__text
+										p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque vel dolore, quis quibusdam autem ipsam, deserunt nihil repellendus nobis esse maiores dolor, reiciendis ut. Non distinctio, eligendi voluptates labore!
+								a(class='btn btn--sm' href='#') READ MORE
+					.news__footer
+						a(class='news__link' href='#') See more posts
+			// FOOTER
+			footer.footer
+				.container
+					.footer__inner
+						.footer__credits
+							.footer__copyright © 2018 UI43 - Free Templates
+							.footer__social
+								a(href='#' target='_blank'): img(src='images/icons/behance_f.svg' width='24' alt='')
+								a(href='#' target='_blank'): img(src='images/icons/dri.svg' alt='')
+								a(href='#' target='_blank'): img(src='images/icons/in.svg' width='22' alt='')
+								a(href='https://www.facebook.com' target='_blank'): img(src='images/icons/face.svg' width='20' alt='')
+								a(href='#' target='_blank'): img(src='images/icons/insta.svg' width='20' alt='')
+								a(href='#' target='_blank'): img(src='images/icons/twitter_f.svg' width='22' alt='')
+						nav.footer__nav
+							a(class='footer__nav-link' href='#') Work
+							a(class='footer__nav-link' href='#') About Me
+							a(class='footer__nav-link' href='#') Blog
+							a(class='footer__nav-link' href='#') Contact
+							a(class='footer__nav-link btn' data-modal='#modal_contact' href='#') HIRE ME
 		include includes/modal-project.pug
 		include includes/modal-resume.pug
 		include includes/modal-contact.pug
